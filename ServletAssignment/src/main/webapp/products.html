@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Listing</title>
+</head>
+<style>
+	input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+    transition: background-color 0.3s;
+}
+
+</style>
+<body>
+    <h1>Product Listing</h1>
+    <form action="ProductServlet" method="get">
+        Product 1 <input type="submit" name="product" value="Buy">
+        <!-- Repeat this for other products -->
+    </form>
+</body>
+</html>

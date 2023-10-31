@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+         input[type="submit"] {
+    		background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+input[type="submit"] {
+    /* ... your existing styles ... */
+    animation: pulse 2s infinite;
+}
+input[type="submit"]{
+	text-align: center;
+}
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 10px 8px rgb(255, 128, 192);
+            animation: fadeIn 3s;
+            
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+     
+
+
+        }
+    </style>
+</head>
+<body>
+    <form action="ProductServlet" method="get">
+        <h2>Login</h2>
+        Username: <input type="text" name="username"><br><br>
+        Password: <input type="password" name="password"><br><br>
+        <input type="submit" value="validate">
+    </form>
+</body>
+</html>
